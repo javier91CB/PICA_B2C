@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   items: Array<any> = [];
-
+  viewCatalog: boolean;
+  values = '';
   constructor() {
     this.items = [
       {name:  '../../../assets/images/img_mountains_wide.jpg'}
@@ -18,4 +19,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  typeSearch(event: any) {
+    if (event.target.value.length > 0) {
+      this.viewCatalog = true;
+    } else {
+      this.viewCatalog = false;
+    }
+  }
 }

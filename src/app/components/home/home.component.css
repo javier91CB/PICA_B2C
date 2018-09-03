@@ -23,8 +23,50 @@
   height: calc(220px);
 }
 
+.botonF1{
+  width:62px;
+  height:62px;
+  border-radius:100%;
+  background:rgb(241, 239, 239);
+  right:0px;
+  top: 0px;
+  position: relative;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: rgb(57, 89, 160) 1px solid;
+  transition:.3s;  
+}
+span{
+  transition:.5s;  
+}
+.botonF1:hover span{
+  transform:rotate(360deg);
+}
+.botonF1:active{
+  transform:scale(1.1);
+}
+.btn{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size:20px;
+  outline:none;
+  position:absolute;
+  right:5px;
+  top: 0px;
+  transform:scale(0);
+}
+.animacionVer{
+  transform:scale(1);
+}
+
 #myInput {
-  background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;

@@ -59,10 +59,26 @@
           <table class="table" style="text-align:center;">
               <tbody>
                 <tr>
-                  <td><img src="../../../assets/images/events.PNG"/></td>
-                  <td><img src="../../../assets/images/transport.PNG"/></td>
-                  <td><img src="../../../assets/images/countries.PNG"/></td>
-                  <td><img src="../../../assets/images/Hotel.PNG"/></td>
+                  <td>
+                      <button class="botonF1" title="Buscar Eventos" (click)="toggleChild()">
+                        <img src="../../../assets/images/events.PNG"/>
+                      </button>
+                   </td>
+                  <td>
+                      <button class="botonF1" title="Buscar Transporte" (click)="toggleChild()">
+                        <img src="../../../assets/images/transport.PNG"/>
+                      </button>
+                  </td>
+                  <td>
+                      <button class="botonF1" title="Buscar Paises" (click)="toggleChild()">
+                        <img src="../../../assets/images/countries.PNG"/>
+                      </button>
+                  </td>
+                  <td>
+                      <button class="botonF1" title="Buscar Hotel" (click)="toggleChild()">
+                        <img src="../../../assets/images/Hotel.PNG"/>
+                      </button>
+                  </td>
                 </tr>
               </tbody>
               <thead>
@@ -75,10 +91,10 @@
                 </thead>
             </table>
       </div>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda por nombre o codigo..." title="Type in a name">
+      <input type="text" id="myInput" (keyup)="typeSearch($event)" placeholder="Busqueda por nombre o codigo..." title="Busqueda">
 </li>
 <br />
-<li class="list-group-item ">
+<li class="list-group-item" *ngIf="viewCatalog">
     <div class="card-body">        
         <app-catalog></app-catalog>
     </div>
