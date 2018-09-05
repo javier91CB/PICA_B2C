@@ -17,7 +17,7 @@
 								<div class="list-group">
 										<div class="profile-userbuttons">
 												<button type="button" class="btn btn-success btn-sm">Llamar a Soporte</button>
-												<button type="button" class="btn btn-warning btn-sm">Registrar Tarjeta</button>
+												<button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-warning btn-sm">Registrar Tarjeta</button>
 										</div>
 								</div>
 								<div class="profile-usermenu ">
@@ -28,9 +28,9 @@
 														Mi perfil </a>
 													</li>
 											<li>
-												<a href="#" target="_blank">
+												<a routerLink="/notifications">
 												<i class="glyphicon glyphicon-ok"></i>
-												Actividades </a>
+												Mis Ordenes </a>
 											</li>
 										</ul>
 							   </div>
@@ -83,4 +83,47 @@
 		</ul>
 		<br>
 </div>
+<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-sm">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Crear Tarjeta</h4>
+			</div>
+			<div class="modal-body">
+				<label>Tipo de tarjeta:</label>
+				<select class="form-control">
+						<option selected>Seleccionar...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+				</select>
+				<p></p>
+				<label>Número de Tarjeta:</label>
+				<input class="form-control"/>
+				<p></p>
+				<label>Código de Seguridad:</label>
+				<input class="form-control"/>
+				<p></p>
+				<label>Fecha de expedición:</label>
+				<p></p>
+					<select class="form-control col-md-2">
+						<option selected>Seleccionar...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					Mes
+    				<p></p>
+					<input class="form-control col-md-2"/>
+					Año
+			</div>
+			<div class="modal-footer">
+                  <div class="col-md-1">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Agregar</button>
+				  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 <br><br><br>

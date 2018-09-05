@@ -33,19 +33,14 @@
                 </div>
           </div>
       </li>
-      <br/>
-      <li class="list-group-item ">
-          <div class="card-body">
-              <div *ngIf="paginator" class="center">
-                  <div class="pagination">
-                      <a href="#">❮</a>
-                      <a href="#" class="active">1</a>
-                      <a href="#">2</a>
-                      <a href="#">❯</a>
-                  </div>
-              </div>
-          </div>
-      </li>
   </ul>
+  <div *ngIf="paginator" class="center" style="background-color:rgb(255, 255, 255)">
+        <div class="pagination">
+            <a href="#">❮</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">❯</a>
+        </div>
+    </div>
 </div>
 <br>
